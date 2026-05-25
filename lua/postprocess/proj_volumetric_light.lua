@@ -799,7 +799,8 @@ local function InitVolumetricLightParams(scattering)
     --local s = 555.0
     --local p = 555.0
 	local s = 7055.0
-    local p = 2555.0
+    --local p = 2555.0
+	local p = 1555
     mat_blur_h:SetFloat("$c1_x",s)
     mat_blur_h:SetFloat("$c2_x",p)
     mat_blur_h:SetFloat("$c2_y",0)
