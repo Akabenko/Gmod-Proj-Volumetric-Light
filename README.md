@@ -11,7 +11,7 @@ New Inputs:
 - SetVolumetricIntensity — Sets the volumetric lighting\'s intensity.
 
 ***
-Workshop addon: https://steamcommunity.com/sharedfiles/filedetails/?id=3712613623
+Workshop addon: [Proj Volumetric Light (Shader)](https://steamcommunity.com/sharedfiles/filedetails/?id=3712613623), Based on [GShader library](https://github.com/Akabenko/GShader-library/tree/main).
 <br>Half upsamplig code by [LVutner](https://github.com/LVutner).
 <br>Matrix calculations by Jaymun.
 <br>Volumetric params of `proj_volumetric_light.fgd` from [Strata Source](https://developer.valvesoftware.com/wiki/Ru/Strata_Source) from Valve Wiki page: [Env_projectedtexture](https://developer.valvesoftware.com/wiki/Env_projectedtexture).
