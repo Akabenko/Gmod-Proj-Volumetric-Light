@@ -12,9 +12,9 @@ New Inputs:
 
 ***
 Workshop addon: https://steamcommunity.com/sharedfiles/filedetails/?id=3712613623
-<br>Half upsamplig code by LVutner.
+<br>Half upsamplig code by [LVutner](https://github.com/LVutner).
 <br>Matrix calculations by Jaymun.
-<br>Volumetric params of `proj_volumetric_light.fgd` from Strata Source from Valve Wiki page: https://developer.valvesoftware.com/wiki/Env_projectedtexture
+<br>Volumetric params of `proj_volumetric_light.fgd` from [Strata Source](https://developer.valvesoftware.com/wiki/Ru/Strata_Source) from Valve Wiki page: https://developer.valvesoftware.com/wiki/Env_projectedtexture
 
 Reference:
 - [Volumetric lights by Alexandre Pestana](https://www.alexandre-pestana.com/volumetric-lights/)
