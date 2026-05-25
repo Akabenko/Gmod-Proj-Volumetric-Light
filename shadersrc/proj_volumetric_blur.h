@@ -12,9 +12,10 @@ float2 TexBaseSize     : register( c4 );
 
 const float size              : register( c0 );
 const float sigma             : register( c1 );
-const float2 ppp              : register( c2 );
+const float3 ppp              : register( c2 );
 #define sigma_pow ppp.x
 #define sigma_min ppp.y
+#define max_dist ppp.z
 
 struct PS_IN
 {
@@ -66,16 +67,13 @@ half4 main(PS_IN i ) : COLOR
     float depth = orig.a;
     float inv_depth = 1/depth;
     
-    //float3 worldPos = reconstructPosition(TexCoords.xy, inv_depth);
     float3 worldPos = 1/wpdepth.xyz;
 
     float2 tex_size = TexBaseSize * size;
 
-    float dist = distance(cEyePos, worldPos);
-    
-    float powed_si = sigma * pow(dist, sigma_pow);
+    float powed_si = sigma * pow(1-depth, sigma_pow); //sigma * (pow(1-depth, ppp));
     float sigma2 = -1/(powed_si*powed_si);
-    
+
     float total_weight = 0.0;
     half3 result = 0;
 
