@@ -18,3 +18,6 @@ Workshop addon: https://steamcommunity.com/sharedfiles/filedetails/?id=371261362
 
 Reference:
 - [Volumetric lights by Alexandre Pestana](https://www.alexandre-pestana.com/volumetric-lights/)
+
+<img width="512" height="512" alt="r_proj_volumetric" src="https://github.com/user-attachments/assets/a66277a1-fefb-439c-b1d1-494db6e8a043" />
+
