@@ -1,0 +1,86 @@
+@PointClass base(Targetname, Parentname, Angles) studioprop( "models/editor/spot.mdl" ) frustum(lightfov,nearz,farz,lightcolor,-1) = env_projectedtexture :
+	"Projected texture entity."
+[
+	spawnflags(flags) =
+	[
+		1  : "Start Enabled (Does nothing, ignore)"		: 1
+		//2  : "Always Update (Does nothing)"		: 0
+		4  : "Start Disabled"			: 0
+	]
+
+	texturename(material) 		: "Texture Name" : "effects/flashlight001" : "The name of the texture to project"
+	textureframe(integer) 		: "Texture Frame" : 0 : "The frame of the texture, for animated textures"
+
+	lightcolor(color255)		: "Light Color" : "255 255 255" : "Light Color RGB-Intensity"
+	lightstrength(float)		: "Light Strength" : "1" : "How bright the light appears"
+
+	lightfov(float)				: "FOV" : "90" : "Field of view of the projected texture. Larger numbers will make the texture larger at closer distances, but will also negatively impact shadow quality. Should be below 179."
+	nearz(float)				: "NearZ" : "4" : "Near Z for projected texture. This only affects shadows"
+	farz(float)					: "FarZ" : "750" : "Far Z for projected texture. This affects shadows AND the light's range"
+
+	style(Choices) : "Appearance" : 0 =
+	[
+		0 : "Normal"
+		10: "Fluorescent flicker"
+		2 : "Slow, strong pulse"
+		11: "Slow pulse, noblack"
+		5 : "Gentle pulse"
+		1 : "Flicker A"
+		6 : "Flicker B"
+		3 : "Candle A"
+		7 : "Candle B"
+		8 : "Candle C"
+		4 : "Fast strobe"
+		9 : "Slow strobe"
+	]
+	pattern(string) : "Custom Appearance" : "" : "Set a custom pattern of light brightness for this light. Pattern format is a string of characters, where 'a' is total darkness, 'z' fully bright. i.e. 'aaggnnttzz' would be a steppy fade in from dark to light."
+
+	target(target_destination)	: "Aim Target" : : "If set, the projected texture will automatically aim at the given entity"
+
+	enableshadows(Choices) : "Enable Shadows" : 1 : "Enables/disables shadows from this projected texture." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	shadowquality(Choices) : "Shadow Quality" : 1 : "Quality of shadows." =
+	[
+		0 : "Low"
+		1 : "High"
+	]
+	lightonlytarget(Choices) : "Light Only Target" : 0 : "Limit flashlight effect to only effect target entity." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	lightworld(Choices) : "Light World" : 1 : "Control whether flashlight effects static world geometry." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
+	cameraspace(integer)		: "Camera Space" : 0 : "Angles are interpreted as being relative to camera."
+
+	// Inputs
+	input TurnOn(void)		: "Turn on the texture"
+	input TurnOff(void)		: "Turn off the texture"
+	input Toggle(void)		: "Toggle the texture between being off and on"
+	input SetFOV(float)		: "Set FOV"
+	//input Ambient(float)			: "Set Spotlight ambient (does nothing)"
+	input SpotlightTexture(string)	: "Set the spotlight texture"
+	input EnableShadows(bool)		: "Set the if shadows are enabled"
+	input SetLightStyle(integer)	: "Change the lightstyle (see Appearance field for possible values)."
+	input SetPattern(string)		: "Set a custom pattern of light brightness for this light. Pattern format is a string of characters, where 'a' is total darkness, 'z' fully bright. i.e. 'aaggnnttzz' would be a steppy fade in from dark to light."
+	input SetNearZ(integer)			: "Set the near Z plane for this projected texture"
+	input SetFarZ(integer)			: "Set the far Z plane for this projected texture"
+	input LightWorld(bool)			: "Sets whether the projectedtexture should light the world or not"
+	input Target(target_destination): "Sets the target entity for this projected texture to follow"
+	input LightOnlyTarget(bool)		: "Sets whether this projected texture should only apply light to the target entity. This will still light the world"
+	input LightColor(string)		: "Sets the color of the projected texture"
+
+	// Volumetric Light addon
+	volumetric(boolean) : "Enable Volumetrics" : 1 : "Enables/disables volumetrics from this projected texture."
+	volumetricintensity(float) : "Volumetric Intensity" : "0.1" : "Sets the intensity of the volumetric lighting."
+	
+	input EnableVolumetrics(bool) : "Set if the volumetrics are enabled."
+	input SetVolumetricIntensity(float) : "Sets the volumetric lighting\'s intensity."
+]
