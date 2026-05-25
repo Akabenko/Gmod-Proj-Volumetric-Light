@@ -2,6 +2,8 @@
 # For Mappers
 Place `proj_volumetric_light.fgd` to `Garrysmod/bin/`. Then goto Hammer++, `Tools` -> `Options` -> `Game Data files:` -> `Add` `proj_volumetric_light.fgd`. 
 
+<img width="904" height="504" alt="image" src="https://github.com/user-attachments/assets/14705293-38dc-4559-856f-1ab555489b7a" />
+
 New params of `env_projectedtexture`:
 - **Enable Volumetrics** (`volumetric`) — Enables/disables volumetrics from this projected texture.
 - **Volumetric Intensity** (`volumetricintensity`) — Sets the intensity of the volumetric lighting.
