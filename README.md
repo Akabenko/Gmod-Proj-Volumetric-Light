@@ -13,6 +13,7 @@ New Inputs:
 ***
 Workshop addon: https://steamcommunity.com/sharedfiles/filedetails/?id=3712613623
 <br>Half upsamplig code by LVutner.
+<br>Matrix calculations by Jaymun.
 <br>Volumetric params of `proj_volumetric_light.fgd` from Strata Source from Valve Wiki page: https://developer.valvesoftware.com/wiki/Env_projectedtexture
 
 Reference:
