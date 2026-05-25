@@ -796,13 +796,13 @@ local function InitVolumetricLightParams(scattering)
     mat_up:SetFloat("$c2_w", scattering)
 
     -- sigma and distance power
-    local s = 0.1
-    local d = 1
+    local s = 555.0
+    local p = 555.0
     mat_blur_h:SetFloat("$c1_x",s)
-    mat_blur_h:SetFloat("$c2_x",d)
+    mat_blur_h:SetFloat("$c2_x",p)
     mat_blur_h:SetFloat("$c2_y",0)
     mat_blur_v:SetFloat("$c1_x",s)
-    mat_blur_v:SetFloat("$c2_x",d)
+    mat_blur_v:SetFloat("$c2_x",p)
     mat_blur_v:SetFloat("$c2_y",0)
 end
 
