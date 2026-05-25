@@ -3,12 +3,12 @@
 Place `proj_volumetric_light.fgd` to `Garrysmod/bin/`. Then goto Hammer++, `Tools` -> `Options` -> `Game Data files:` -> `Add` `proj_volumetric_light.fgd`. 
 
 New params of `env_projectedtexture`:
-- Enable Volumetrics (`volumetric`) — Enables/disables volumetrics from this projected texture.
-- Volumetric Intensity (`volumetricintensity`) — Sets the intensity of the volumetric lighting.
+- **Enable Volumetrics** (`volumetric`) — Enables/disables volumetrics from this projected texture.
+- **Volumetric Intensity** (`volumetricintensity`) — Sets the intensity of the volumetric lighting.
 
 New Inputs:
-- EnableVolumetrics — Set if the volumetrics are enabled.
-- SetVolumetricIntensity — Sets the volumetric lighting\'s intensity.
+- **EnableVolumetrics** — Set if the volumetrics are enabled.
+- **SetVolumetricIntensity** — Sets the volumetric lighting\'s intensity.
 
 ***
 Workshop addon: [Proj Volumetric Light (Shader)](https://steamcommunity.com/sharedfiles/filedetails/?id=3712613623), based on [GShader library](https://github.com/Akabenko/GShader-library/tree/main).
