@@ -1,6 +1,6 @@
 screenspace_general
 {
-	"$pixshader" 		"proj_volumetric_upsampling_quad_ps30"
+	"$pixshader" 		"proj_volumetric_upsampling_quad_csm_ps30"
 	"$vertexshader" 	"pp_vs30"
 	
 	"$basetexture"	"_rt_WPDepth"

@@ -1,0 +1,21 @@
+screenspace_general
+{
+	"$pixshader" 		"proj_volumetric_blury_ps30"
+	"$vertexshader" 	"pp_vs30"
+	
+	"$texture1"	"_rt_WPDepth"
+	"$basetexture"		"_rt_VolumetricProj"
+	$copyalpha 1
+	$writealpha 1
+
+	$c0_x 1
+	$c2_x 0.3
+	$c3_x 0
+
+
+	"<dx90"
+	{
+		$no_draw 1
+	}
+
+}

@@ -1,0 +1,19 @@
+screenspace_general
+{
+	"$pixshader" 		"proj_volumetric_shadowmap_ps30"
+	"$vertexshader" 	"pp_vs30"
+	
+	"$basetexture"	"_rt_WPDepth"
+	"$texture1"		"_rt_shadowdepthtexture_0"
+	"$texture2"		"black"
+
+	$copyalpha 1
+	$writealpha 1
+	//$linearwrite 1
+		
+	"<dx90"
+	{
+		$no_draw 1
+	}
+
+}

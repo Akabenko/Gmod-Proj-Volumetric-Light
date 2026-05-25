@@ -1,14 +1,14 @@
 screenspace_general
 {
-	"$pixshader" 		"proj_volumetric_upsampling_quad_ps30"
+	"$pixshader" 		"proj_volumetric_csm_ps30"
 	"$vertexshader" 	"pp_vs30"
 	
 	"$basetexture"	"_rt_WPDepth"
-	"$texture1"		"_rt_VolumetricProj"
+	"$texture1"		"_rt_shadowdepthtexture_0"
+	"$texture2"		"black"
 
-	//"$linearread_texture1" 1
-
-	$c0_x 1
+	$copyalpha 1
+	$writealpha 1
 	//$linearwrite 1
 
 	"<dx90"
